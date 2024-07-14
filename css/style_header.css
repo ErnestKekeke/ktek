@@ -1,0 +1,231 @@
+#nav_header{
+    background-image: url("../Images/gallery/nav_img.jpg");
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 100%;
+    height: 100px;
+    background-position: bottom left;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    transition: all 4s ease-in-out; 
+    
+}
+
+#nav_header:hover{
+    transition: all 4s ease-in-out; 
+
+    background-position: top right;    
+}
+
+#nav_header img{
+float: left;
+content: url("../Images/logo/small_logo.png");
+width: 80px;
+margin-top: 5px;    
+}
+
+#nav_header img:hover{
+    content: url("../Images/logo/small_logo3.png");
+    border-radius: 40px;
+    transition: all 2s ease-in-out; 
+}
+
+/* /////////......... for phone */
+@media only screen and (max-width:650px){
+    #nav_header img{
+        width: 50px;
+        margin-top: 10px;    
+        }   
+}
+
+
+
+
+#nav_header>div[id="academy"]{
+    float: right;  
+    margin-top: 30px;
+    width: 100px;
+    height: 40px; 
+    background-color: red;
+    transition: all 2s ease-in-out; 
+    
+    }
+
+
+    #nav_header>div[id="academy"] a{
+        font-size: 1em;
+        color: white;
+
+        } 
+
+        #nav_header>div[id="academy"] a:hover{
+            font-size: 1em;
+            color: black;
+        } 
+
+
+
+    #nav_header>div[id="academy"]:hover{
+        background:linear-gradient(to right, white, white, red, red, white, white);
+        transition: all 2s ease-in-out; 
+        border-radius: 20px;
+            /* background: linear-gradient(to right, red, blue, green, rgba(175, 166, 194, 0.2)); */
+        }
+
+
+
+/* /////////......... for phone */
+@media only screen and (max-width:650px){
+    #nav_header>div[id="academy"]{
+
+        width: 60px;
+
+        } 
+
+        #nav_header>div[id="academy"] a{
+
+            font-size: 0.7em;
+    
+            } 
+
+            #nav_header>div[id="academy"] a:hover{
+                font-size: 0.7em;
+            
+            } 
+}
+        
+
+
+        /* ...........phone menu; */
+    #nav_header>div[id="phone_menu"]{
+        display: none;
+        }
+    
+    #nav_header ul[id="phone_menu2"]{
+            display: none;    
+        }
+
+    #nav_header>div>a{
+        display: block;
+        color: white;
+        line-height: 40px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #nav_header>div>a:hover{
+        color: black;
+        font-size: 1.3em;
+        transition: all 2s ease-in-out; 
+    }
+#nav_header ul[id="pc_menu"]{
+    max-width: 70%;
+    /* width: fit-content; */
+    /* background-color: aqua; */
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    overflow:hidden;
+
+}
+
+
+
+ 
+
+#nav_header ul[id="pc_menu"] li{
+    line-height: 100px;
+    display: block;
+}
+
+#nav_header ul[id="pc_menu"] li a{
+    display: block;
+    color: azure;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 1px aqua;
+
+}
+
+
+#nav_header ul[id="pc_menu"] li a:hover{
+    color: aqua;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 1px black;
+
+}
+
+/* /////////......... for phone */
+@media only screen and (max-width:650px){
+
+    #nav_header ul[id="pc_menu"]{
+    display: none;
+    }
+
+
+    #nav_header>div[id="phone_menu"]{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 55px;
+        height: 55px;
+        background-color: rgba(0, 255, 255, 0.2);
+        box-shadow: -4px 4px 5px white;
+        border-radius: 55px;
+        display: flex;
+        color: white;
+        margin-left: 40%;
+        margin-top: 23px;
+        justify-content: center;
+        text-transform: uppercase;
+      
+        align-items: center;
+        overflow:hidden;
+        }
+
+        #nav_header>div[id="phone_menu"]:hover{
+            color: aqua;
+            background-color: rgba(255, 255, 0, 0.3);
+            box-shadow: -4px 4px 5px aqua;
+
+            }
+
+        #nav_header ul[id="phone_menu2"]{
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin-top: 10px;
+            margin-left: 36%;
+            width: fit-content;
+            display: none;        
+        }
+
+        #nav_header ul[id=phone_menu2] li{
+            line-height: 20px;
+            display: block;
+        }
+        
+        #nav_header ul[id=phone_menu2] li a{
+            display: block;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            letter-spacing: 5px;
+            font-size: 1em;
+            text-shadow: 1px 1px 1px aqua;
+        
+        }
+
+        #nav_header ul[id=phone_menu2] li a:hover{
+            color: aqua;
+        
+        }
+
+
+        #nav_header{
+            min-height: 100px;
+            height: fit-content;
+        }
+
+}   

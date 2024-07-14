@@ -1,0 +1,148 @@
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root{
+  --blue: #1e90ff;
+  --white: #ffffff;
+
+  --color1: aliceblue;
+  --maincolor: #415766;
+}
+
+
+body{
+  background-color: var(--maincolor);
+}
+
+/* ////////////////////// */
+
+#studentDiv{
+  width:80%;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  margin-left: 10%;
+  /* background-image: url("Images/gallery/img_academy.jpg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat; */
+
+  background-image: linear-gradient(to top right, red, white, white, blue);
+  transition: all 4s ease;
+  position: absolute;
+
+}
+
+#studentDiv>div#divLogo{
+  position: absolute;
+  opacity: 0.8;
+  left:0;
+  top: 0;
+  z-index: 1;
+width:100%;
+height: 100%;
+background-image: url("../Images/logo/big_logo2.png");
+background-repeat: no-repeat;
+transition: all 4s ease;
+}
+
+#studentDiv:hover{
+
+  background-image: linear-gradient(to top right,  blue,white, white, white,red);
+  transition: all 4s ease;
+
+}
+
+#studentDiv h2{
+ width: 100%;
+ text-align: center;
+}
+
+form[id="studentForm"]{
+  position: relative;
+  z-index: 2;
+ }
+
+
+form[id="studentForm"]  > div{
+  margin-left: 20%;
+ }
+
+ form[id="studentForm"]  > div> label > img#studentPicProfile{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+ }
+
+form[id="studentForm"] > input{
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 15px;
+  line-height: 20px;
+  font-size: 1.2em; font-family: 'Times New Roman', Times, serif;
+}
+
+form[id="studentForm"] > input[id="studentDOB"]{
+width: fit-content;
+}
+
+form[id="studentForm"] > input[id="studentDiscount"]{
+  width: 100px;
+  }
+form[id="studentForm"] > input[id="studentAmount"]{
+  width: 100px;
+  margin-bottom: 40px;
+  }
+
+form[id="studentForm"] > label{
+  margin-left: 5%;
+  font-size: 1.5em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+form[id="studentForm"] > section, form[id="studentForm"] > select, form[id="studentForm"] > textarea{
+  margin-left: 5%;
+  min-width: 150PX;
+  font-size: 1.2em;
+  line-height: 20px;
+  text-indent: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+form[id="studentForm"] > textarea{
+  line-height: 10px;
+  width: 70%;
+  height: 8vh;
+  max-width: 90%;
+  max-height: 15vh;
+  margin-bottom: 15px;
+  
+}
+
+form[id="studentForm"] > section{
+  min-width: fit-content;
+  margin-bottom: 5px;
+}
+
+
+form[id="studentForm"] > select{
+
+  margin-bottom: 15px;
+}
+
+form[id="studentForm"] > button{
+  margin-left: 25%;
+  line-height: 20px;
+  width: 100px;
+  height: 50px;
+  font-size: 1.2em;
+  font-weight: bolder;
+  border: 2px solid red;
+  border-radius: 20px;
+  box-shadow: inset 2px 2px 4px red;
+  margin-bottom: 20px;
+}

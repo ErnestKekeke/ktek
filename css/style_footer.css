@@ -1,0 +1,168 @@
+/* /////////////// footer     */
+
+footer{
+    width: 100%;
+    height: fit-content;
+    background:linear-gradient(to bottom left, grey, black);
+
+}
+
+#foot_div{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin-left: 5%;
+    flex-wrap: wrap;
+}
+
+#foot_div div{
+    max-width: 300px;
+}
+
+#foot_div3 div[id="iconSM"] div{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#foot_div3 div div a img{
+    width: 30px;
+}
+
+/* #foot_div3 div a img{
+    width: 30px;
+} */
+
+#foot_div3 div div a img:hover{
+    width: 30px;
+    border-radius: 20%;
+    box-shadow: 2px 2px 2px red;
+    transition: all 2s ease-in-out; 
+  
+}
+
+img[id="icon_twitter"]:hover{
+    content: url("Images/socialM/twitter2.png");
+}
+
+img[id="icon_instagram"]:hover{
+    content: url("Images/socialM/instagram2.png");
+}
+
+img[id="icon_tiktok"]:hover{
+    content: url("Images/socialM/tiktok2.png");
+}
+
+img[id="icon_facebook"]:hover{
+    content: url("Images/socialM/facebook2.png");
+}
+
+img[id="icon_youtube"]:hover{
+    content: url("Images/socialM/youtube2.png");
+}
+
+img[id="icon_whatsapp"]:hover{
+    content: url("Images/socialM/whatsapp2.png");
+}
+
+
+#foot_div3 div div a[class="icon_link"]{
+   color: white;
+   padding-left: 20px;
+   padding-bottom: 5px;
+   letter-spacing: 7px;
+}
+
+#foot_div3 div div a[class="icon_link"]:hover{
+    color: #00416c;
+    text-shadow: -1px -1px 1px rgb(255, 142, 142);
+ }
+
+#foot_div3 p, #foot_div2 h3, #foot_div1 h3{
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-shadow: 3px 3px 5px white;
+    margin-top: 10px;
+    color: white;
+}
+
+#foot_div2 ul li{
+    display: block;
+}
+
+#foot_div2 ul li a{
+    display: block;
+    color: aqua;
+    letter-spacing: 7px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+
+#foot_div2 ul li a:hover{
+color: white;
+text-shadow: -1px -1px 3px rgb(255, 142, 142);
+}
+
+
+#foot_div1 img:hover{
+    content: url("Images/logo/small_logo.png");
+    box-shadow: 2px 2px 2px black;
+}
+
+#foot_div1{
+    margin-top: 10px;
+}
+
+#foot_div1 p{
+font-family: 'Times New Roman', serif;
+color:black;
+letter-spacing: 4px;
+text-align: justify;
+line-height: 30px;
+font-weight: bolder;
+}
+
+#foot_div1 p:hover{
+color: aqua;
+    }
+
+
+    #foot_div1 a img[id="icon_mail"]{
+        width: 30px;
+        transition: all 2s ease-in-out; 
+    }
+    
+
+    
+    #foot_div1 a img[id="icon_mail"]:hover{
+        width: 30px;
+        border-radius: 20%;
+        box-shadow: 2px 2px 2px red;
+        transition: all 2s ease-in-out; 
+        content: url("Images/socialM/mail2.png");
+      
+    }
+
+
+         /* /////////......... for phone */
+         @media only screen and (max-width:650px){
+
+            #foot_div2,#foot_div3 {
+               margin-top: 30px;
+            }
+         }    
+
+/* //////////////// copyright */
+
+#copyright{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: space-between;
+}
+
+#copyright p{
+color: white;
+}
+

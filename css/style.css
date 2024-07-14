@@ -1,0 +1,723 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    }
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+
+    --color1: aliceblue;
+    --maincolor: #415766;
+    }
+
+/* ////////////////////////........scrollbar */
+
+    ::-webkit-scrollbar {
+        width: 20px;
+      }
+    
+      ::-webkit-scrollbar-thumb {
+        background: rgb(201, 0, 0);
+        border-radius: 10px;
+      }
+    
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 2px 2px 5px blue;
+        border-radius: 10px;
+        background-color: aquamarine;
+      }
+    
+/* ////////////////////////........scrollbar */
+
+body{
+    background-color: var(--color1);
+}
+
+
+
+/* ///////////////////// ........ body Main*/ 
+
+body>main{
+    /* background-color: #415766; */
+    background: linear-gradient(to bottom, #0f3f5f, #3c4951, #1b262e, #45677d, #415766, #415766, #0071bc);
+    width: 90%;
+    margin-left: 5%;
+}
+
+#div_intro{
+    width: 100%;
+    background-position: center;
+    
+}
+
+#div_intro>img{
+    width: 15%;
+    float: right;
+    margin-right: 10vw;   
+    content: url("../Images/logo/big_logo2.png");  
+border-radius: 100%;
+transition: all 4s ease-in-out; 
+box-shadow: 8px 8px 8px red; 
+}
+
+#div_intro>img:hover{
+content: url("../Images/logo/big_logo3.png");  
+border-radius: 0%;
+transition: all 4s ease-in-out; 
+box-shadow: 8px 8px 8px rgb(0, 0, 0);
+}
+
+#div_intro>h2{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2em;
+    letter-spacing: 1.5vw;
+    background:white;
+    text-shadow: 2px 2px 3px black;
+    background-clip: text;
+    color: transparent;   
+}
+
+#div_intro>h2:hover{
+    background:linear-gradient(to right, white, blue, red,white, red, blue, white);
+    text-shadow: -2px -2px 1px white;
+    background-clip: text;
+    color: transparent;
+    transition: all 4s ease-in-out; 
+
+}
+
+
+/* /////////......... for phone */
+@media only screen and (max-width:650px){
+    #div_intro>h2{
+        font-size: 1.2em;
+        letter-spacing: 1.5vw;
+
+    }
+    
+}  
+
+#div_intro>p{
+    color: white;
+    width: 95%;
+    margin-top: 10px;
+    margin-left: 5vw;
+    font-size: 1.5em;
+    font-family: "Teachers", sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 20px;
+    line-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: -1px 1px 1px blue;
+    text-indent: 15vw;
+    font-style: italic;
+}
+
+
+/* /////////......... for phone */
+@media only screen and (max-width:650px){
+    #div_intro>p{
+
+        font-size: 1.2em;
+        letter-spacing: 1.5px;
+        text-indent: 15vw;
+        line-height: 30px;
+        word-spacing: 15px;
+       
+    }  
+}  
+
+/* ////////////////////// Service */
+
+#service{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+#service>h2{
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    color: aqua;
+}
+
+#service div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#service div article{
+    width: 400px;
+}
+
+#service div article>h3{
+    color:aquamarine;
+    text-shadow: 1px 4px 4px black;
+    padding-left: 10px;
+    font-size: 1.5em;
+    font-family:'Times New Roman', sans-serif;
+   
+}
+
+#service div article>h3:hover{
+    color:aqua;
+    text-shadow: inset 1px 4px 4px white;
+   
+}
+
+
+#service div article>p{
+    color: white;
+    font-family:'Times New Roman', sans-serif;
+    font-size: 1.4em;
+    word-spacing: 10px;
+    line-height: 35px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+#service div article>img{
+width: 100%;
+}
+
+#service div article>img:hover{
+    box-shadow: 10px 10px 10px black;
+    }
+
+
+/* /////////......... for phone */
+@media only screen and (max-width:650px){
+    #service div{
+        display: block;
+
+        margin-top: 20px;
+    }
+
+    #service div article{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #service div article>h3{
+        font-size: 1.2em;       
+    }
+
+    #service div article>p{
+
+        font-size: 1.0em;
+        word-spacing: 7px;
+        line-height: 25px;
+
+    }
+} 
+
+    /* ////////////////////// About */
+
+    #about>h2{
+        text-align: center;
+        font-size: 2em;
+        text-transform: uppercase;
+        padding: 10px 0px;
+        color: aqua;
+    }
+
+    #about_nav_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        background-image: url("../Images/gallery/nav_img.jpg");
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 4s ease-in-out; 
+    }
+
+    #about_nav_img:hover{
+        background-image: url("../Images/gallery/img1.jpg");
+        box-shadow: 10px 10px 10px white;
+        height: 450px;
+        transition: all 4s ease-in-out; 
+    }
+
+    #about_nav_img>p{
+        color: white;
+        text-align: center;
+        letter-spacing: 15px;
+        font-size: 2em;
+        font-weight: bolder;
+    }
+
+    #about>article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #about>article>p{
+        min-width: 300px;
+        width: 50%;
+
+
+        color: white;
+        font-family:'Times New Roman', sans-serif;
+        font-size: 2em;
+        word-spacing: 10px;
+        line-height: 35px;
+        text-align: end;
+        padding-top:5%;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        background-color: white;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 1px 1px 3px blue;
+    }
+
+    #about>article>p:hover{
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 500;
+        font-style: normal;
+        color: white;
+        text-shadow: none;
+        font-weight: 800;
+        text-align:left;
+    }
+    #about>article>div{
+        display: grid;
+        /* background-color: red; */
+       
+        width: 50%;   
+        min-width: 300px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 10vw;
+        grid-auto-rows: 10vw;
+        grid-column-gap: 1.5vw;
+        padding-right: 1vw;
+        padding-top:1vw;
+        grid-row-gap: 1.5vw;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 20px;
+
+    grid-template-areas: "A A B C"
+                        "A A D D"
+                        "E F D D";
+                        
+        
+    }
+
+    .about_img{
+        width: 100%;
+        /* border: 2px solid black; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 100%;
+    }
+
+
+    /* /////////......... for phone */
+@media only screen and (max-width:650px){
+    #about_nav_img{
+
+        width: 95%;
+        height: 200px;
+        margin-left: 2.5%;
+    }
+
+    #about_nav_img:hover{
+
+        height: 250px;
+       
+    }
+
+
+    #about>article{
+        display: block;
+
+    }
+
+    #about>article>p{
+        width: 90%;
+        text-align: center;
+        margin-left: 5%;
+        font-size: 1.3em;
+        word-spacing: 7px;
+        line-height: 25px;
+        /* padding-right: 10%; */
+        margin-bottom: 30px;
+        overflow: hidden;
+        
+    }
+
+
+    #about>article>div{
+       
+        width: 90%;  
+        margin-left: 5%; 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 80px;
+        grid-auto-rows: 80px;
+        /* padding-right: 10%; */
+         margin-bottom: 50px;
+    }
+
+}
+
+
+    #about_img8{
+        grid-area: A;
+        background-image: url("../Images/gallery/img8.jpg");
+        box-shadow: 3px 3px 2vw aqua;
+    }
+
+    #about_img10{
+        grid-area: B;
+        background-image: url("../Images/gallery/img10.jpg");
+        box-shadow: -3px 3px 2vw white;
+    }
+
+    #about_img13{
+        grid-area: C;
+        background-image: url("../Images/gallery/img13.jpg");
+        box-shadow: -3px -3px 2vw aqua;
+    }
+
+
+    #about_img9{
+        grid-area: D;
+        background-image: url("../Images/gallery/img9.jpg");
+        box-shadow: -3px -3px 2vw white;
+        
+    }
+
+    #about_img14{
+        grid-area: E;
+        background-image: url("../Images/gallery/img14.jpg");
+        box-shadow: 3px -3px 2vw white;
+    }
+
+    #about_img15{
+        grid-area: F;
+        background-image: url("../Images/gallery/img15.jpg");
+        box-shadow: 3px -3px 2vw aqua;
+    }
+
+    #about_img8:hover,   #about_img9:hover, #about_img9:hover,
+     #about_img10:hover, #about_img13:hover, #about_img14:hover, #about_img15:hover{
+        background-image: url("../Images/gallery/img1.jpg");
+        box-shadow: none;
+        border: 5px solid rgba(0, 255, 255, 0.4);
+    }
+
+
+
+    /* ////////////////////// contact us */
+
+    #contact>h2{
+        text-align: center;
+        font-size: 2em;
+        text-transform: uppercase;
+        padding: 10px 0px;
+        color: aqua;
+    }
+
+
+
+
+    #contact_div{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 5%;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url("../Images/gallery/img_Contact.jpg");  
+        background-position: left;
+        background-repeat: no-repeat;
+        transition: all 2s ease-in-out; 
+        box-shadow: 5px 5px 10px black;
+        padding-bottom: 10vh;
+     
+    }
+
+
+    #contact_div:hover{
+        background-position: right;
+        transition: all 2s ease-in-out; 
+        border-radius: 100px;
+        box-shadow: 10px 10px 20px white;
+    }
+
+    form[id="userContact"] input{
+        width: 30vw;
+        min-width: 280px;
+        margin-top: 30px;
+        font-size: 1.3em;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 30px;
+        text-transform: capitalize;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding-left: 10px;
+        border: none;
+        
+    }
+
+    form[id="userContact"] input[id="userEmail"]{
+
+        text-transform: lowercase;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    form[id="userContact"] select{      
+        text-align: center;
+        width: 25vw;
+        min-width: fit-content;
+        height: 30px;
+        margin-top: 30px;
+        font-size: 1.3em;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: none;
+    }
+
+    form[id="userContact"] textarea{
+        font-family: 'Times New Roman', Times, serif;
+        padding-left: 10px;
+        margin-top: 30px;
+        font-size: 1.3em;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 30vw;
+        min-width: 280px;
+        max-width: 500px;
+        min-height: 50px;
+        resize: both;
+        max-height: 200px;
+        border: none;
+    
+    }
+
+
+
+    form[id="userContact"] span{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 1.2em;
+        color: white;
+        text-shadow: 1px 1px 0.5px blue;
+    }
+
+    /* .......... for form in contact us ...... */
+    #formcorrect{
+        color: blue;
+    }
+
+    #formerror{
+        color: red;
+    }
+
+    form[id="userContact"] input, form[id="userContact"] textarea, form[id="userContact"] select{
+        color: rgb(119, 237, 255);
+        border: none;
+        background-color: rgba(0, 0, 0, 0.3);
+        
+    }
+
+
+
+    form[id="userContact"] input::placeholder, form[id="userContact"] textarea::placeholder{
+        color: rgba(255, 221, 0, 0.5);
+        border: none;
+    }
+
+
+    form[id="userContact"] input:focus, form[id="userContact"] textarea:focus, form[id="userContact"] select:focus {
+        border: none;
+        color: white;
+        box-shadow: 5px 5px 10px blue;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0.3);
+              
+    }
+
+    form[id="userContact"] button{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 1.2em;
+        color: blue;
+        margin-top: 30px;
+        text-shadow: 1px 1px 0.5px black;
+        line-height: 50px;
+        width: 100px;
+        margin-left: 40%;
+        border: 2px solid white;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 50px;
+        box-shadow: inset 5px 5px 2px white;
+
+    }
+
+    form[id="userContact"] button:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 255, 0.5);
+        border: none;
+        color: white;
+        background-color: rgba(255, 0, 0, 0.1);
+    }
+
+
+    #contact address[id="contact_address"]{
+        margin: 20px;       
+     }
+
+     #contact address[id="contact_address"] h2{
+        padding-top: 10vh;
+        text-shadow: 1px 1px 1px black;   
+     }
+
+    #contact address[id="contact_address"] h3{
+       margin-top: 20px;
+       text-shadow: 1px 1px 1px black;
+       
+    }
+
+    #contact address[id="contact_address"] p{
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 5px;
+        font-size: 1.8em;
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+        
+     }
+
+     #contact address[id="contact_address"] p:hover{
+        color:  #66b9f0
+        
+     }
+
+         /* /////////......... for phone */
+@media only screen and (max-width:650px){
+
+    #contact_div{
+       display: block; 
+       padding-bottom: 5vh;
+    }
+
+    form[id="userContact"] input{
+        width: 210px;
+        min-width: 100px;
+        margin-top: 20px;
+        font-size: 1.0em;
+        font-family: 'Times New Roman', Times, serif;
+        border: none;
+        text-transform: capitalize;
+
+    }
+
+
+    form[id="userContact"] select{      
+        width: 100px;
+        font-size: 1.0em;
+        margin-top: 20px;
+
+    }
+
+    form[id="userContact"] textarea{
+        margin-top: 10px;
+        font-size: 1.0em;
+
+        min-width: 280px;
+        max-width: 350px;
+        margin-left: 4%;
+   
+    }
+
+
+
+    form[id="userContact"] span{
+        font-size: 0.8em;
+        margin-left: 2%;
+    }
+
+    form[id="userContact"] button{
+
+        font-size: 0.9em;
+        margin-top: 20px;
+        line-height: 70px;
+        width: 70px;
+        margin-left: 40%; 
+        border-radius: 100%;
+        border: none;
+    }
+
+
+    #contact address[id="contact_address"] p{
+        letter-spacing: 3px;
+        font-size: 1.2em;
+        
+     }
+
+     #contact address[id="contact_address"]{
+        margin-top: 0px;
+        margin-bottom: 20px;        
+     }
+
+     #contact address[id="contact_address"] h2{
+        padding-top: 5vh;
+        text-shadow: 1px 1px 1px black;   
+     }
+
+}
+
+ 
+/* ////////////////// image display */
+
+.image_display_container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.image_display_container img{
+    width: 70vw;
+    height: fit-content;
+    content: url("../Images/gallery/img14.jpg");
+}
+
+@media only screen and (max-width:650px){
+    .image_display_container img{
+        width: 90vw;
+        height: 50%;
+        max-height: 48vh;
+    }
+
+ }  
+
+.image_display_container img:hover{
+    border-radius: 100%;
+    box-shadow: 10px 10px 20px aqua;
+    transition: all 4s ease-in-out; 
+}
+
